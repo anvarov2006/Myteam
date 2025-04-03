@@ -224,17 +224,20 @@ color: #fff;
 
 
 .build_section {
-    padding: 140px 0;
-    background: #012f34;
-    background-image: url(./svg/build1.svg);
-    background-repeat: no-repeat;
-    background-size: 100px 244px;
-    background-position: right bottom;
+padding: 140px 0;
+background-color: #012f34;
+    
+
 }
 
 .build {
     display: flex;
     justify-content: space-between;
+    background-image: url(./svg/build1.svg);
+    background-repeat: no-repeat;
+    background-size: 100px 244px;
+    background-position: right bottom;
+
 }
 
 .build_list {
@@ -278,6 +281,39 @@ font-size: 48px;
 line-height: 1;
 color: #fff;
 }
+
+@media (max-width:1011px) {
+    .build {
+        flex-direction: column;
+        align-items: center;
+    }
+    .build_left  {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .build_left h1 {
+        font-size: 32px;
+      line-height: 32px;
+    }
+    .build {
+        background-position:right top;
+    }
+}
+
+@media (max-width:625px){
+.build_left {
+padding-right: 250px; 
+}
+.build {
+    background-position: right top;
+}
+
+.build_list {
+    flex-direction: column;
+    text-align: center;
+}
+}
+
 
 .delivery_section {
     background-image: url(./svg/delivery1.svg);
