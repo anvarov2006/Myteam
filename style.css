@@ -226,6 +226,7 @@ color: #fff;
 .build_section {
 padding: 140px 0;
 background-color: #012f34;
+min-width: 625px;
     
 
 }
